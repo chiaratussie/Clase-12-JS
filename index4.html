@@ -27,6 +27,44 @@
                 $('#parrafo').css('background-color', 'blue');
                 $('#parrafo').css('color', 'cyan');
             });
+
+            var ocultarParrafo = false;
+            $('#boton').click(function(){
+                ocultarParrafo=!ocultarParrafo
+                if(ocultarParrafo){
+                    $('#parrafo2').hide();
+                    $('#boton').text('Mostrar')
+                } 
+                else{
+                    $('#parrafo2').show();
+                    $('#boton').text('Ocultar')
+                } 
+            });
+            
+            $('#nombre').val('12345');
+            $('#nombre').keyup(function(){
+                console.log('cambio', $('#nombre').val());
+
+            });
+
+            /*$('#nombre').keyup(function(){
+                var valor=$('#nombre').val();
+                console.log('cambio');
+
+            });*/
+
+            var cambiarImagen = false;
+            $('#boton2').click(function(){
+                console.log("cambiar Imagen");
+                cambiarImagen=!cambiarImagen
+                if(cambiarImagen){
+                    $('img').attr('src', 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/suicide_squad_woman_avatar_joker-128.png');
+                } 
+                else{
+                    $('img').attr('src','https://cdn4.iconfinder.com/data/icons/characters-from-pop-culture/100/Bolivar-128.png');
+                } 
+            });
+
         })
         
         
@@ -39,5 +77,20 @@
 <p id="parrafo"> 
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi explicabo eligendi temporibus ipsa non cumque perspiciatis odio? Autem minus facilis minima similique iste ut dicta nostrum incidunt eaque nulla. Quaerat?
 </p>
+
+<button id="boton">Ocultar</button>
+
+
+<p id="parrafo2"> 
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi explicabo eligendi temporibus ipsa non cumque perspiciatis odio? Autem minus facilis minima similique iste ut dicta nostrum incidunt eaque nulla. Quaerat?
+</p>
+<br>
+<input id="nombre" type="text">
+
+<br>
+<button id="boton2">Cambiar Imagen</button>
+<br>
+<img src="https://cdn4.iconfinder.com/data/icons/characters-from-pop-culture/100/Bolivar-128.png" alt="" width="200">
+
 </body>
 </html>
