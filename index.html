@@ -9,8 +9,148 @@
 <body>
 
     <script>
-        var str1 = 'Hola';
+        /*var str1 = 'Hola';
         console.log(str1, typeof str1);    
+        console.log(str1.length); 
+        console.log(str1.charAt(0)); 
+        var str2 = 'Mundo';
+        var str3 = str1.concat(' ').concat(str2);
+        console.log(str3);
+        console.log(str3.indexOf('do'));
+        var str4 = str3.replace('Hola', 'Chau');
+        console.log(str4);
+        var array1=str4.split(' ');
+        console.log(array1);
+        var str5=array1.join('.');
+        console.log(str5);
+        console.log(str5.substr(2,4));
+        console.log(str5.toLocaleLowerCase());
+        console.log(str5.toLocaleUpperCase());
+        var str6='    123    ';
+        console.log('('+str6+')');
+        console.log('('+str6.trim()+')');*/
+
+        /*//ARRAY METHODS
+        var numeros =[1,2,3,4,5,6,7];
+        console.log(numeros[2]); //empieza desde 0
+        numeros.unshift(88);
+        for(var i=0; i<numeros.length; i++) {
+            console.log(numeros[i]);
+        }
+        //console.log(i);
+        console.log('---');
+        //numeros.pop();
+        //numeros.pop();
+        numeros.shift();
+        numeros.shift();
+        for (var i=0; i<numeros.length; i++){
+            console.log(numeros[i]);
+        }
+        numeros.splice(2,1);
+        console.log(numeros);*/
+
+        //OBJETOS
+        console.log('---');
+        var usuario1={
+            nombre: 'Juan',
+            apellido: 'Perez',
+            edad: 32,
+            mail:'d@y',
+            foto: 'https://cdn0.iconfinder.com/data/icons/shift-avatar/32/Max-512.png',
+            sumar3: function(a,b){return a+ b;}
+        };
+        console.log(usuario1);
+
+        var usuario2={
+            nombre: 'Martin',
+            apellido: 'Rodriguez',
+            edad: 44,
+            mail:'d@sfgsy',
+            foto: 'https://cdn0.iconfinder.com/data/icons/famous-characters-add-on-vol-2-glyph/48/Sed-20-128.png',
+            sumar3: function(a,b){return a+ b;}
+        };
+        console.log(usuario1);
+
+        var usuario3={
+            nombre: 'Ana',
+            apellido: 'Ruiz',
+            edad: 12,
+            mail:'d@sfgsy',
+            foto: 'https://cdn1.iconfinder.com/data/icons/project-management-8/500/worker-128.png',
+            sumar3: function(a,b){return a+ b;}
+        };
+        console.log(usuario1);
+
+        var usuario1Array=[
+            'Juan',
+            'Perez',
+            32,
+            'd@y',
+            'https://cdn0.iconfinder.com/data/icons/shift-avatar/32/Max-512.png'
+        ];
+        console.log(usuario1Array);
+        
+        console.log(usuario1.nombre);
+        console.log(usuario1Array[0]);
+        var clave='nombre'
+        console.log(usuario1[clave]); 
+        console.log(usuario1['nombre']); 
+
+        usuario1Array.forEach(function(index, usuario){
+            console.log(index, '-->', usuario);
+        });
+
+        console.log('---');
+
+
+        for(var key in usuario1){
+            console.log(key, ':', usuario1[key]);
+        }
+
+        console.log(Object.keys(usuario1).length);
+
+        console.log('---');
+
+        function sumar (a,b){
+            return a+b;
+        }
+
+        var sumar2= function(a,b){
+            return a+b;
+        }
+
+        var res=sumar(5, 6);
+        console.log(isNaN(res)? 'Resultado no valido':res);
+
+        res=sumar2(4, 6);
+        console.log(isNaN(res)? 'Resultado no valido':res);
+
+        res=usuario1.sumar3(3,6);
+        console.log(isNaN(res)? 'Resultado no valido':res);
+
+        usuario1.multiplicar= function(a,b){
+            return a*b;
+        }
+        console.log(usuario1.multiplicar(5,6));
+        console.log(usuario1);
+
+
+        console.log('---');
+
+        var usuarios = [];
+        console.log(usuarios);
+
+        usuarios.push(usuario1);
+        usuarios.push(usuario2);
+        usuarios.push(usuario3);
+        console.log(usuarios);  
+
+        console.log('---');
+
+
+        usuarios.forEach(function(usuario){
+            console.log(usuario.nombre);
+        })
     
     </script>
     

@@ -1,0 +1,86 @@
+  
+Generating clink initial settings in "C:\Users\educacionit\Downloads\config\settings"
+Additional *.lua files in "C:\Users\educacionit\Downloads\config" are loaded on startup.
+Creating initial user_aliases store in "C:\Users\educacionit\Downloads\config\user_aliases.cmd"...
+        1 archivo(s) copiado(s).
+Creating user startup file: "C:\Users\educacionit\Downloads\config\user_profile.cmd"
+        1 archivo(s) copiado(s).
+
+C:\Users\educacionit\Downloads
+? ..
+".." no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\educacionit\Downloads
+? e:
+
+E:\
+? cd TussieChiara\
+
+E:\TussieChiara (master -> origin)
+? cd JavaScript\
+
+E:\TussieChiara\JavaScript (master -> origin)
+? cd Objetos\
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git init
+Initialized empty Git repository in E:/TussieChiara/JavaScript/Objetos/.git/
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git add .
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git commit -m "v0.0.1 - nuevo"
+
+*** Please tell me who you are.
+
+Run
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'educacionit@alumno-1101-02.(none)')
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git config --global user.email "chiaratussie@hotmail.com"
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+?  git config --global user.name "chiaratussie"
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+?  git commit -m "v0.0.1 - nuevo"
+[master (root-commit) 4a1035f] v0.0.1 - nuevo
+ 1 file changed, 18 insertions(+)
+ create mode 100644 index.html
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git remote add origin https://github.com/chiaratussie/Clase-12-JS.git
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 452 bytes | 452.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/chiaratussie/Clase-12-JS.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+? code .
+
+E:\TussieChiara\JavaScript\Objetos (master -> origin)
+?
